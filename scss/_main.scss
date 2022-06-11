@@ -1,0 +1,531 @@
+
+/*客製-首頁*/
+.wrap {
+    .bg {
+        position: relative;
+        .big-yellow {
+            position: absolute;
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+            background-repeat: no-repeat;
+            width: 851.5px;
+            height: 768px;
+            right: 0px;
+        }
+        .ball {
+            position: absolute;
+            top: calc(100vh - 180px);
+            width: 138px;
+            height: 360px;
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg);
+            background-position: right;
+        }
+        .main-ball {
+            position: absolute;
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg);
+            background-size: cover;
+            width: 210px;
+            height: 310px;
+            top: 1680px;
+            right: 0px;
+        }
+        .score-ball {
+            position: absolute;
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+            top: 2612px;
+            left: 3.6%;
+        }  
+    }
+}
+
+
+.header {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0px;
+        margin-bottom: 30px;
+        .top-btn {
+            display: inline-block;
+            width: 128px;
+            height: 40px;
+            font-weight: 400;
+            background-color: #FF5D50;
+            color: white;
+            border-radius: 2em;
+            padding: 0.5rem 2rem;
+        }
+        .top-btn:hover {
+            background-color: $main-color;
+            transform: scale(1.1);
+            transition: transform 0.5s;
+        }
+        .logo {
+            img {
+                width: 215px;
+                height: 40px;
+            }
+        }
+    }
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-banner {
+            h2 {
+                font-size: 1.125rem;
+                color: $main-color;
+                padding-bottom: 0.5rem;
+            }
+            p {
+                font-size: 3rem;
+                padding-bottom: 1rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+                font-weight: 400;
+            }
+        }
+        .right-banner {
+            img {
+                width: 532px;
+                height: 534px;
+            }
+        }    
+    }
+}
+/*rwd-header*/
+@media( max-width:768px) {
+    .wrap {
+        .bg {
+            .big-yellow {
+                position: absolute;
+                background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg) no-repeat;
+                background-size: contain;
+                width: 80%;
+                top: 500px;
+                right: 25%;
+            }
+            .ball {
+                position: absolute;
+                background-size: cover;
+                top: calc(100vh - -200px);
+                width: 49px;
+                height: 126px;
+                z-index: 1;
+            }
+            .main-ball {
+                position: absolute;
+                width: 88px;
+                height: 135px;
+                top: 3280px;
+                right: 0px;
+            }
+            .score-ball {
+                position: absolute;
+                background-position: right;
+                width: 77px;
+                height: 153px;
+                top: 4120px;
+                left: 0%;
+            }
+        }
+    }
+    .header {
+        padding: 0;
+        .top {
+            border-bottom: 2px solid #FFD153;
+            padding: 24px 20px;
+        }
+        .banner {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px 20px;
+            .left-banner {
+                margin-bottom: 32px;
+                h2 {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 2rem;
+                }
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+        }    
+    }
+}
+
+
+.container {
+    padding-top: 217px;
+    margin: 0 auto;
+    max-width: 1001px;
+    .app-card {
+        .main-title {
+            margin-bottom: 48px;
+            h2 {
+            text-align: center;
+            }
+
+        }
+    }
+}
+/*rwd-container*/
+@media( max-width:768px) {
+    .container {
+        padding-top: 0px;
+        margin-top: 60px;
+        .app-card {
+            .main-title {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+.card {
+    border: none;
+    margin-bottom: 100px;
+    .card-sm {
+        display: flex;
+        justify-content: space-between;
+        padding-inline-start: 0px;
+        li {
+            img {
+                width: 90px;
+                display: block;
+                margin: 0 auto;
+            }
+            h3 {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 24px 0;
+            }
+            p {
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+        
+    }
+    
+}
+/*rwd-card*/
+@media( max-width:768px) {
+    .card {
+        margin-bottom: 60px;
+        .card-sm {
+            flex-direction: column;
+            li {
+                margin-bottom: 24px;
+                img {
+                    width: 60px;
+                }
+                h3 {
+                    font-size: 1.125rem;
+                    padding: 16px 0px;
+                }
+            }
+        }
+    }
+}
+
+.container-main {
+    margin-bottom: 100px;
+    .function-card {
+        .main-title {
+            margin-bottom: 48px;
+            text-align: center;
+            p {
+                font-size: 1.25rem;
+                font-weight: 400;
+            }
+        }
+        .card-lg {
+            display: flex;
+            margin-bottom: 100px;
+            .role-card {
+                width: 25%;
+                text-align: center;
+                img {
+                    border-radius: 12px 12px 0px 0px;
+                }
+            }
+            .cardbottom {
+                height: 128px;
+                border-radius: 0px 0px 12px 12px;
+                background: #fff;
+                h3 {
+                    color: $main-color;
+                    font-size: 1rem;
+                    padding: 1rem 0;
+                }
+                p {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .function-cardtwo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1039px;
+        margin-bottom: 100px;
+        .left-card {
+             display: flex;
+             flex-wrap: wrap;
+             width: 50%;
+             .f-card {
+                 width: 40%;
+                 border-radius: 12px;
+                 padding-left: 2rem;
+                 h3 {
+                     font-size: 1.125rem;
+                     margin-bottom: 1rem;
+                 }
+                 p {
+                     font-weight: 400;
+                     margin-bottom: 3rem;
+                 }
+             }
+        }
+        .right-main {
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-weight: 400;
+                font-size: 1.125rem;
+                line-height: 1.5;
+            }
+            .right-main-btn {
+                display: inline-block;
+                padding: 12px 32px;
+                width: 136px;
+                height: 49px;
+                font-weight: 400;
+                font-size: 1.125rem;
+                color: #ffff;
+                background-color: $main-color;
+                border-radius: 27px;
+            }
+            .right-main-btn:hover {
+                background-color: #FF5D50;
+                transform: scale(1.1);
+                transition: transform 0.5s;
+            }
+        }
+    }
+}
+/*rwd-main*/
+@media( max-width:768px) {
+    .container-main {
+        padding: 0px 20px;
+        .function-card {
+            .main-title {
+                margin-bottom: 32px;
+            }
+            .card-lg {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 60px;
+                .role-card {
+                    width: 48%;
+                    margin-bottom: 24px; 
+                }
+                .cardbottom {
+                    p {
+                        padding: 0px 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media( max-width:375px) {
+    .container-main {
+        .function-card {
+            .main-title {
+                .title {
+                    padding-left: 0;
+                }
+            }
+            .card-lg {
+                .role-card {
+                    width: 88%;
+                }
+            }
+        }
+    }    
+}
+/*rwd-cardtwo*/
+@media( max-width:768px) {
+    .container-main {
+        .function-cardtwo {
+            flex-direction: column-reverse;
+            margin-bottom: 60px;
+            .left-card {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                .f-card {
+                    width: 230px;
+                    height: 284px;
+                    margin-right: 0;
+                    margin-bottom: 24px;
+                }
+            }
+            .right-main {
+                text-align: center;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+.score {
+    .main-title {
+        margin-bottom: 104px;
+        text-align: center;
+    }
+    .score-card {
+        display: flex;
+        gap: 1rem;
+        .score-card-m {
+            width: 33%;
+            padding: 24px 32px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            position: relative;
+            background-color: #fff;
+            .user {
+                width: 80px;
+                border-radius: 50%;
+                position: absolute;
+                top: -56px;
+            }
+            p {
+                font-weight: 400;
+            }
+            .respond {
+                padding: 24px 0px;
+            }
+            h4 {
+                font-size: 1rem;
+                border-top: 1px solid #DDDDDD;
+                padding: 24px 0px 8px 0px;
+            }
+            .score-card-star {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    width: 16px;
+                }
+            }
+        }
+    }
+}
+/*rwd-score*/
+@media( max-width:768px) {
+    .score {
+        .main-title {
+            margin-bottom: 88px;
+        }
+        .score-card {
+            flex-direction: column;
+            .score-card-m {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 64px;
+            }
+        }
+    }
+}
+
+.pg-chage {
+    text-align: center;
+    margin-top: 24px;
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #DDDDDD;
+        border-radius: 50px;
+        margin: 0 4px;
+    }
+    .dot-or {
+        display: inline-block;
+        width: 16px;
+        height: 10px;
+        background: #FFD153;
+        border-radius: 50px;
+        margin: 0 4px;
+    }
+}
+/*rwd-chage*/
+@media( max-width:768px) {
+    .pg-chage {
+        margin-top: 0;
+    }
+}
+
+.footer {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 260px;
+    height: 503px;
+    position: relative;
+    .footer-main {
+        font-size: 2rem;
+        padding-top: 36px;
+        padding-bottom: 48px;
+    }
+    .footer-btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #ffff;
+        background-color: $main-color;
+        width: 136px;
+        height: 49px;
+        padding: 12px 32px;
+        border-radius: 27px;
+    }
+    .footer-btn:hover {
+        background-color: #FF5D50;
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+}
+/*rwd-chage*/
+@media( max-width:768px) {
+    .footer {
+        .footer-main {
+            padding-bottom: 24px;
+        }
+    }
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #F5F5F5;
+    h5 {
+        font-weight: 400;
+        font-size: 1rem
+    }
+}
+
+

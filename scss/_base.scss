@@ -1,0 +1,89 @@
+/*body*/
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*all*/
+.ct-width {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.btn-top {
+    position: absolute;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    z-index: 50;
+    opacity: 1;
+}
+.btn-top:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/*首頁*/
+.title {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.ct-p16 {
+    padding: 0px 16px;
+}
+
+.z-index {
+    z-index: -1;
+}
+
+.box-shadow {
+    box-shadow: 0px 2px 10px #00000014;
+}
+
+.icon-bg {
+    background: #ffff;
+    width: 86px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 32px 0px 24px 0px;
+}
+
+.f-card-mb {
+    margin-bottom: 1.75rem;
+}
+
+.f-card-mr {
+    margin-right: 2.9375rem;
+}
+
+/*pay-page*/
+.number-user-bg {
+    width: 169px;
+    height: 108px;
+    background: #F5F5F5 0% 0% no-repeat;
+    border-radius: 12px;
+}
+.number-font-color {
+    color: $main-color;
+}
+.number-card-mb {
+    margin-bottom: 32px;
+    font-weight: 400;
+}

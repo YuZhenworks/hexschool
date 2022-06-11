@@ -1,0 +1,264 @@
+
+    .pay-header {
+        position: relative;
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg) no-repeat;
+        height: 559px;
+        background-position: top right;
+        background-color: #F7F9FD;
+        border-radius: 0px 0px 0px 300px;
+        margin-bottom: 100px;
+    }
+/*rwd-header*/
+@media( max-width:375px) {
+    .pay-header {
+        position: relative;
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg) no-repeat;
+        background-size: contain;
+        height: 495px;
+        background-position: top left;
+        background-color: #F7F9FD;
+        border-radius: 0px 0px 0px 300px;
+        margin-bottom: 100px;
+    }
+}
+
+    .pay-bg {
+        position: relative;
+        .pay-ball {
+            position: absolute;
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg) no-repeat;
+            background-position: right;
+            background-size: cover;
+            width: 94px;
+            height: 361px;
+            top: 260px;
+        }
+    }
+    .header-main {
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0px;
+            margin-bottom: 92px;
+            .top-btn {
+                display: inline-block;
+                width: 128px;
+                height: 40px;
+                font-weight: 400;
+                background-color: #FF5D50;
+                color: white;
+                border-radius: 2em;
+                padding: 0.5rem 2rem;
+            }
+            .top-btn:hover {
+                background-color: $main-color;
+                transform: scale(1.1);
+                transition: transform 0.5s;
+            }
+            .logo {
+                img {
+                    width: 215px;
+                    height: 40px;
+                }
+            }
+        }
+        .banner {
+            .banner-main {
+                h2 {
+                    font-size: 3rem;
+                    padding-bottom: 1rem;
+                }
+                h3 {
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+/*rwd-header*/
+@media( max-width:768px) {
+    .pay-header {
+        .header-main {
+            padding: 0;
+            .top {
+                border-bottom: 2px solid #FFD153;
+                padding: 24px 20px;
+                background-color: #ffff;
+            }
+            .banner {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+    .pay-content {
+        max-width: 941px;
+        margin: 0 auto;
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    .pay-cotainer {
+        margin-bottom: 100px;
+        .pay-cotainer-title {
+            margin-bottom: 48px;
+        }
+        .pay-cotainer-number {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 54px;
+            .number {
+                a {
+                    font-weight: 400;
+                    font-size: 1.125rem;
+                    color: $main-color;
+                    border: 1px solid $main-color;
+                    border-radius: 27px;
+                    padding: 0.75rem 2rem;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #ffff;
+                    }
+                    &:focus {
+                        border: 5px solid #98e1e3;
+                        background-color: $main-color;
+                        color: #ffff;
+                    }
+                }
+            }
+        }
+        .number-card {
+            display: flex;
+            justify-content: space-between;
+            .number-card-all {
+                background-color: #ffff;
+                width: 49%;
+                border-radius: 12px;
+                h3 {
+                    font-size: 1.5rem;
+                    padding: 10px 0px 16px 0px;
+                    border-bottom: 1px solid #DDDDDD;
+                }
+            }
+        }
+    }
+/*rwd-content*/
+@media( max-width:768px){
+    .pay-content{
+        .pay-cotainer {
+            margin-bottom: 60px;
+            .pay-cotainer-number {
+                flex-wrap: wrap;
+                margin-bottom: 32px;
+                .number {
+                    margin-bottom: 48px;
+                }
+            }
+        }
+    }
+}
+
+    .number-card-content {
+        padding: 32px 24px;
+        .number-card-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 32px;
+            small {
+                font-weight: 400;
+                font-size: 0.75rem;
+            }
+            p {
+                font-weight: 400;
+                font-size: 2rem;
+                span {
+                    font-weight: bold;
+                    font-size: 0.75rem;
+                    padding-left: 8px;
+                }
+            }
+        }
+        .number-card-merit {
+            .merit {
+                display: flex;
+                margin-top: 16px;
+                h4 {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    padding-left: 13px;
+                }
+            }
+        }
+        .card-btn {
+            margin-top: 32px;
+            .join {
+                display: inline-block;
+                width: 136px;
+                height: 49px;
+                font-weight: 400;
+                font-size: 1.125rem;
+                background-color: $main-color;
+                color: white;
+                border-radius: 27px;
+                padding: 12px 32px;
+                &:hover {
+                    background-color: #FF5D50;
+                    transform: scale(1.1);
+                    transition: transform 0.5s;
+                }
+            }
+        }
+    }
+    /*rwd-content*/
+@media( max-width:768px){
+    .pay-content{
+        .pay-cotainer {
+            .number-card {
+                flex-direction: column;
+                align-items: center;
+                .number-card-all {
+                    width: 88%;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+    .pay-qa {
+        margin-bottom: 100px;
+        .qa-title {
+            margin-bottom: 48px;
+        }
+    }
+    .qa-card {
+        .qa-card-main {
+            .qa-card-title {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 12px;
+                padding: 16px 32px;
+                margin-bottom: 16px;
+                &:hover {
+                background-color: #ececec90;
+                h3 {
+                    color: $main-color;
+                }
+                }
+                h3 {
+                    font-weight: 400;
+                    font-size: 1.125rem;
+                    color: #221E1F;
+                }
+            }
+            p {
+                display: none;
+            }
+        }
+    }
